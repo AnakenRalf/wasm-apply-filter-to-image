@@ -1,13 +1,13 @@
 use wasm_bindgen::prelude::wasm_bindgen;
 use web_sys::console::log_1 as log;
-use base64::{Engine as _, engine::{general_purpose}};
+use base64::{Engine as _, engine::general_purpose};
 use image::load_from_memory;
 use image::ImageOutputFormat::Png;
 use std::io::Cursor;
 
 
 #[wasm_bindgen]
-pub fn grayScale(encoded_file: &str) -> String {
+pub fn gray_scale(encoded_file: &str) -> String {
     log(&"Grayscale image conversion called".into());
     let mut buffer = Vec::<u8>::new();
 

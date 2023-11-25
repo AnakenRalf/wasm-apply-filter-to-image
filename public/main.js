@@ -16,7 +16,7 @@ async function init() {
       /^data:image\/(png|jpeg|jpg);base64,/,
       ""
     );
-    let img_data_url = rustApp.grayScale(base64);
+    let img_data_url = rustApp.gray_scale(base64);
 
     document.getElementById("new-img").setAttribute("src", img_data_url);
   };
