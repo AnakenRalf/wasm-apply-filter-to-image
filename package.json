@@ -1,9 +1,12 @@
 {
+  "homepage": "https://AnakenRalf.github.io/wasm-apply-filter-to-image",
   "name": "imageconverter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "webpack --mode=production",
+    "deploy": "gh-pages -d dist",
     "serve": "webpack serve --mode=development --open",
     "build": "webpack --mode=production"
   },
